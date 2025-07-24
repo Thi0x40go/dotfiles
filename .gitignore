@@ -1,0 +1,7 @@
+fish/fish_history
+fish/fish_variables
+fish/conf.d
+fish/functions
+fish/completions
+nvim_1/lazy-lock.json
+nvim_1/lazyvim.json

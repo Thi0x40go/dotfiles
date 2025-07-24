@@ -1,0 +1,13 @@
+// Static tasks configuration.
+[
+  {
+    "label": "Lazygit",
+    "command": "lazygit",
+    "reveal_target": "center",
+    "hide": "on_success",
+    "args": [],
+    "env": {},
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false
+  }
+]

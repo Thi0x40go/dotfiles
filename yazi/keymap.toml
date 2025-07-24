@@ -1,0 +1,16 @@
+# ~/.config/fish/config.fish
+#Dev Folder
+[[mgr.prepend_keymap]]
+on = ["g", "d" ]
+run = "cd $HOME/dev"
+desc = "Dev folder"
+
+[[mgr.prepend_keymap]]
+on   = "<C-d>"
+run  = "plugin diff"
+desc = "Diff the selected with the hovered file"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a" ]
+run  = "plugin compress"
+desc = "Archive selected files"
