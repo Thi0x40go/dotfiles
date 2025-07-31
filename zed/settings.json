@@ -7,7 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "format_on_save": "prettier",
+  "format_on_save": "off",
+  "formatter": "prettier",
   "git_panel": {
     "dock": "right"
   },
@@ -28,10 +29,17 @@
     "enabled_in_text_threads": false
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "google",
+      "model": "gemini-1.5-flash"
+    },
+    "single_file_review": false,
+    "always_allow_tool_actions": true,
+    "play_sound_when_agent_done": true,
     "default_profile": "minimal",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "provider": "google",
+      "model": "gemini-2.5-flash"
     }
   },
   "features": {
@@ -39,18 +47,13 @@
   },
   "icon_theme": "Material Icon Theme",
   "vim_mode": true,
-  "vim": {
-    "custom_digraphs": {
-      "fz": "🧟‍♀️"
-    }
-  },
   "ui_font_family": "FiraCode Nerd Font",
   "ui_font_size": 13,
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
     "light": "Cyberdream light",
-    "dark": "Catppuccin Mocha (Blur)"
+    "dark": "Cyberdream dark"
   },
   "file_types": {
     "HTML": ["twig"]

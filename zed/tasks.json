@@ -9,5 +9,14 @@
     "env": {},
     "use_new_terminal": true,
     "allow_concurrent_runs": false
+  },
+  {
+    "label": "Gulp Sass Watch",
+    "command": "gulp",
+    "reveal_target": "dock",
+    "hide": "on_success",
+    "args": ["sass"],
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false
   }
 ]
