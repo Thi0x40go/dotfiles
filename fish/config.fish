@@ -25,6 +25,9 @@ if not contains $_asdf_shims $PATH
 end
 set --erase _asdf_shims
 
+set -gx EDITOR "nvim"
+set -gx VISUAL "nvim"
+
 # Extends
 source ~/.config/fish/aliases.fish
 
