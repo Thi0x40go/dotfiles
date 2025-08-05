@@ -9,15 +9,28 @@
 {
   "format_on_save": "off",
   "formatter": "prettier",
+  "outline_panel": {
+    "button": false
+  },
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": false,
+      "debounce_ms": 50
+    }
+  },
   "git_panel": {
-    "dock": "right"
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
   },
   "auto_install_extensions": {
     "html": true,
     "javascript": true,
     "catppuccin-blur": true,
-    "twig": true,
-    "charmed-icons": true
+    "twig": true
   },
   "edit_predictions": {
     "disabled_globs": [],
@@ -26,9 +39,10 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": true
   },
   "agent": {
+    "use_modifier_to_send": false,
     "inline_assistant_model": {
       "provider": "google",
       "model": "gemini-1.5-flash"
@@ -43,17 +57,17 @@
     }
   },
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "copilot"
   },
   "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "ui_font_family": "FiraCode Nerd Font",
-  "ui_font_size": 13,
-  "buffer_font_size": 13,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "theme": {
     "mode": "system",
     "light": "Cyberdream light",
-    "dark": "Cyberdream dark"
+    "dark": "Catppuccin Mocha (Blur)"
   },
   "file_types": {
     "HTML": ["twig"]
