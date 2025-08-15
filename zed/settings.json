@@ -7,8 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "hide_gitignore": false
+  },
   "format_on_save": "off",
-  "formatter": "prettier",
+  "formatter": "language_server",
   "outline_panel": {
     "button": false
   },
@@ -44,8 +47,8 @@
   "agent": {
     "use_modifier_to_send": false,
     "inline_assistant_model": {
-      "provider": "google",
-      "model": "gemini-1.5-flash"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-thinking"
     },
     "single_file_review": false,
     "always_allow_tool_actions": true,
@@ -67,7 +70,7 @@
   "theme": {
     "mode": "system",
     "light": "Cyberdream light",
-    "dark": "Catppuccin Mocha (Blur)"
+    "dark": "Catppuccin Mocha (Blur) [Heavy]"
   },
   "file_types": {
     "HTML": ["twig"]
@@ -83,7 +86,6 @@
     "**/.classpath",
     // above is default from Zed
     "**/out",
-    "**/dist",
     "**/.husky",
     "**/.turbo",
     "**/.vscode-test",

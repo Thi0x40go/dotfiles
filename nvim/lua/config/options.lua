@@ -6,5 +6,4 @@ o.laststatus = 3
 o.spelllang = "en,pt"
 o.spell = true
 o.swapfile = false
-g.copilot_enabled = false
 vim.g.lazyvim_prettier_needs_config = false
